@@ -6,7 +6,7 @@
 }
 
 :root {
-  --themeColor: 29, 161, 242;
+  --themeColor: 128, 0, 255;
   /* Theme Color in (R,G,B) format */
 }
 
@@ -575,9 +575,15 @@ a {
 
 /* projects */
 
+.projects__list {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 3%;
+}
+
 .projects__list-item {
   display: grid;
-  grid-template-columns: 45%;
+  /* grid-template-columns: 45%; */
   grid-gap: 4rem;
   margin-bottom: 8rem;
 }
@@ -831,7 +837,7 @@ a {
 }
 
 .contact__form-visual {
-  background-image: url('https://i.postimg.cc/mrHQw69n/contact-form-bg.jpg');
+  background-image: url('/assets/contact-form-bg.jpg');
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -905,13 +911,18 @@ a {
   display: flex;
   align-content: center;
   justify-content: space-between;
-  max-width: 25rem;
+  /* max-width: 25rem; */
+  max-width: 8rem;
   margin: auto;
   margin-top: 6rem;
 }
 
 .main-footer__social-link-icon {
   width: 2.5rem;
+
+  /* ML Bootstrap Size */
+  font-size: 15pt;
+  color: #f3f3f3;
 }
 
 .main-footer__bottom {
@@ -932,46 +943,35 @@ a {
   font-weight: 700;
 }
 
+span a {
+  color: #C28A51;
+}
 
-.themeClrSelector {
-  position: fixed;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
+.div-btn {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-  z-index: 10;
-  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  overflow: hidden;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .themeClrSelector {
-    top: 100%;
-    transform: translateY(-100%);
-  }
-}
-
-.themeClrSelector__input {
-  background: transparent;
+  font-family: inherit;
+  letter-spacing: 1px;
+  font-weight: 700;
   border: none;
-  cursor: pointer;
-  width: 5rem;
-  height: 5rem;
-  opacity: 0;
-  position: relative;
-  z-index: 10;
+  box-shadow: none;
+  padding: 1.8rem 4rem;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  border: 2px solid rgba(var(--themeColor), 1);
+  margin: 0 0 1rem;
 }
 
-.themeClrSelector__img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  z-index: 1;
+.div-btn span {
+  margin: auto;
+  align-self: center;
+}
+
+.div-btn span.subtitle {
+  font-weight: 500;
+}
+
+@media (max-width: 37.5em) {
+  .btn {
+    padding: 2rem 4rem;
+  }
 }
