@@ -575,9 +575,15 @@ a {
 
 /* projects */
 
+.projects__list {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 3%;
+}
+
 .projects__list-item {
   display: grid;
-  grid-template-columns: 45%;
+  /* grid-template-columns: 45%; */
   grid-gap: 4rem;
   margin-bottom: 8rem;
 }
@@ -935,4 +941,37 @@ a {
   text-decoration: underline;
   color: #fff;
   font-weight: 700;
+}
+
+span a {
+  color: #C28A51;
+}
+
+.div-btn {
+  display: flex;
+  font-family: inherit;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border: none;
+  box-shadow: none;
+  padding: 1.8rem 4rem;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  border: 2px solid rgba(var(--themeColor), 1);
+  margin: 0 0 1rem;
+}
+
+.div-btn span {
+  margin: auto;
+  align-self: center;
+}
+
+.div-btn span.subtitle {
+  font-weight: 500;
+}
+
+@media (max-width: 37.5em) {
+  .btn {
+    padding: 2rem 4rem;
+  }
 }

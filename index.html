@@ -5,11 +5,18 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
+
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <title>MattLimb Consulting</title>
   <meta name="description" content="MattLimb Consulting - Founder, Python Developer and Startup Consultant" />
 
@@ -34,9 +41,17 @@
         <li class="main-header__navigation-link"><a href="/"> Home </a></li>
         <li class="main-header__navigation-link"><a href="/#about"> About </a></li>
         <li class="main-header__navigation-link">
-          <a href="/#projects"> Projects </a>
+          <a href="/#services"> Services </a>
         </li>
-        <li class="main-header__navigation-link"><a href="/#contact" href=""> Contact </a></li>
+        <li class="main-header__navigation-link">
+          <a href="/#contact"> Contact </a>
+        </li>
+        <li class="main-header__navigation-link">
+          <a href="https://www.linkedin.com/in/matt-limb" class="main-footer__social-link" alt="Matt Limb - LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </li>
+
       </ul>
     </nav>
     <div class="main-header__sm-scr-nav-btn">
@@ -63,14 +78,12 @@
         </li>
       </ul>
     </div>
-    <!-- <button class="btn btn-theme btn-sm">Download CV</button> -->
   </header>
 
   <section id="home-hero" class="home-hero">
     <div class="home-hero__content">
       <div class="home-hero__info">
         <h1 class="heading-primary home-hero__heading-primary">
-          <!-- <span class="heading-primary__sm"> Hello 👋</span> -->
           <span class="heading-primary__main">
             I'm Matt! A Tech Startup Consultant, Python Specialist and Co-Founder of HoneypotDB!
           </span>
@@ -91,29 +104,28 @@
         <div class="about__info">
           <div class="about__main-info">
             <h3 class="heading-quaternary about__heading-quaternary">
-              My Story
+              About Me
             </h3>
             <p class="text-primary about__text-primary">
               <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Error, aliquid! Itaque corrupti magnam fugiat mollitia labore
-                magni saepe veritatis voluptatum alias fugit. Explicabo
-                ducimus sequi aut corporis odio repellendus? Lorem ipsum dolor
-                sit amet
+                Hello! I'm Matt - A Python Software Engineer with a passion for
+                Programming, Software Design and Secure Development.
               </span>
               <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Error, aliquid! Itaque corrupti magnam fugiat mollitia labore
-                magni saepe veritatis voluptatum alias fugit. Explicabo
-                ducimus sequi aut corporis odio repellendus? Lorem ipsum dolor
-                sit amet
+                Starting out as a Security Engineer, building endpoint security systems,
+                I quickly developed a passion for Software Development and Design. Working
+                with Unipart Digital and the London Stock Exchange Group futher accelerated
+                my skills and solidified a Security First Development mindset.
               </span>
               <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Error, aliquid! Itaque corrupti magnam fugiat mollitia labore
-                magni saepe veritatis voluptatum alias fugit. Explicabo
-                ducimus sequi aut corporis odio repellendus? Lorem ipsum dolor
-                sit amet
+                Now - I'm a Co-Founder of <a href="https://honeypotdb.com">HoneypotDB</a>,
+                building a Threat Intelligence Platform aimed at providing evidence-based
+                actionable intelligence for Cyber Security Teams.
+              </span>
+              <span>
+                Additionally, I offer Software Consultancy Services to Startups and Smalll Businesses,
+                specializing in software design, short term POC and MVP development, and free
+                software development workshops.
               </span>
             </p>
           </div>
@@ -197,7 +209,6 @@
         <i class="devicon-postgresql-plain"></i>
       </li>
       <li class="skills-showcase__list-item">
-
         <i class="devicon-nginx-original"></i>
       </li>
     </ul>
@@ -206,9 +217,6 @@
     <div class="main-container">
       <h2 class="heading-secondary projects__heading-secondary">
         <span class="heading-secondary__sm"> Services</span>
-        <span class="heading-secondary__main">
-          Here you will find some of the personal and clients projects that I created with the project details
-        </span>
       </h2>
       <div class="main-section__content">
         <div class="projects__list">
@@ -219,141 +227,75 @@
               <span class="projects__list-item-count-end-dot"> </span>
             </div>
             <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
-              </div>
               <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Project Name
+                Consultancy
               </h3>
-              <!-- <hr class="projects__title-text-divider" /> -->
-
               <p class="text-primary projects__list-item-text-primary">
                 <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
-                  labore magni saepe veritatis voluptatum alias fugit.
-                  Explicabo ducimus
+                  Short-Term POC and MVP Development Services. Design, Test and Document
+                  a project for your Small Business or Start Up.
                 </span>
-                <!-- <br />
-                  <br /> -->
                 <span>
-                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
-                  sit amet, consectetur adipisicing elit
+                  Limited Web Development Services.
                 </span>
               </p>
-              <button class="btn btn-theme projects__btn-theme">
-                Live Link
-              </button>
-              <button class="btn btn-inv projects__btn-inv">Code Link</button>
+              <div class="div-btn btn-theme projects__btn-theme">
+                <span>£50 <span class="subtitle">/ hour</span></span>
+              </div>
+              <a class="div-btn btn btn-inv projects__btn-inv" href="/#contact"><span>Contact
+                  Me</span></a>
             </div>
           </div>
           <div class="projects__list-item projects__list-item--inv">
             <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
-              </div>
               <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Project Name
+                Design Workshop
               </h3>
               <!-- <hr class="projects__title-text-divider" /> -->
 
               <p class="text-primary projects__list-item-text-primary">
                 <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
-                  labore magni saepe veritatis voluptatum alias fugit.
-                  Explicabo ducimus
+                  A 1-3 hour Specialized Software Design and Development Workshop
+                  centered around your business and product.
                 </span>
-                <!-- <br />
-                  <br /> -->
                 <span>
-                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
-                  sit amet, consectetur adipisicing elit
+                  Aimed at Small Businesses and Startups
                 </span>
               </p>
-              <button class="btn btn-theme projects__btn-theme">
-                Live Link
-              </button>
-              <button class="btn btn-inv projects__btn-inv">Code Link</button>
-            </div>
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 2 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
+              <div class="div-btn btn-theme projects__btn-theme">
+                <span>£150 <span class="subtitle">/ hour</span></span>
+              </div>
+              <a class="div-btn btn btn-inv projects__btn-inv" href="/#contact"><span>Contact
+                  Me</span></a>
             </div>
           </div>
           <div class="projects__list-item">
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 3 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
-            </div>
             <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
-              </div>
               <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Project Name
+                Mini Workshops
               </h3>
               <!-- <hr class="projects__title-text-divider" /> -->
 
               <p class="text-primary projects__list-item-text-primary">
                 <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
-                  labore magni saepe veritatis voluptatum alias fugit.
-                  Explicabo ducimus
+                  A 1 hour workshop focusing on desiging a Software Stack based
+                  upon your company product.
                 </span>
-                <!-- <br />
-                  <br /> -->
                 <span>
-                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
-                  sit amet, consectetur adipisicing elit
+                  Aimed at Small Businesses and Startups
                 </span>
               </p>
-              <button class="btn btn-theme projects__btn-theme">
-                Live Link
-              </button>
-              <button class="btn btn-inv projects__btn-inv">Code Link</button>
-            </div>
-          </div>
-          <div class="projects__list-item projects__list-item--inv">
-            <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
+              <div class="div-btn btn-theme projects__btn-theme">
+                <span>FREE</span>
               </div>
-              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Project Name
-              </h3>
-              <!-- <hr class="projects__title-text-divider" /> -->
-
-              <p class="text-primary projects__list-item-text-primary">
-                <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
-                  labore magni saepe veritatis voluptatum alias fugit.
-                  Explicabo ducimus
-                </span>
-                <!-- <br />
-                  <br /> -->
-                <span>
-                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
-                  sit amet, consectetur adipisicing elit
-                </span>
-              </p>
-              <button class="btn btn-theme projects__btn-theme">
-                Live Link
-              </button>
-              <button class="btn btn-inv projects__btn-inv">Code Link</button>
-            </div>
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 4 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
+              <a class="div-btn btn btn-inv projects__btn-inv" href="/#contact"><span>Contact
+                  Me</span></a>
             </div>
           </div>
+
         </div>
       </div>
+    </div>
     </div>
   </section>
   <section id="contact" class="contact main-section">
@@ -366,14 +308,15 @@
       </h2>
       <div class="main-section__content">
         <div class="contact__form-cont">
-          <form class="contact__form">
+          <form class="contact__form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="5084b8d5-4ac3-4bd2-a762-e63de64431b0">
             <div class="contact__form-field">
               <label for="name" class="contact__form-field-label">Name</label>
-              <input placeholder="Enter Your Name" type="text" class="contact__form-field-input" />
+              <input placeholder="Enter Your Name" name="name" type="text" class="contact__form-field-input" />
             </div>
             <div class="contact__form-field">
               <label for="name" class="contact__form-field-label">Email</label>
-              <input placeholder="Enter Your Email" type="text" class="contact__form-field-input" />
+              <input placeholder="Enter Your Email" name="email" type="email" class="contact__form-field-input" />
             </div>
             <div class="contact__form-field">
               <label for="name" class="contact__form-field-label">Message</label>
@@ -431,6 +374,7 @@
     </div>
   </footer>
   <script src="./script.js"></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 
 </html>
